@@ -24,6 +24,6 @@ Very simple Compile Daemon for Go
 
 ## Postgres Docker
 
-```dockerfile
-docker run --name gorm -e POSTGRES_PASSWORD=gorm -d gorm --ports=9920
+```docker
+docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 ```
